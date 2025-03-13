@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trang Web Hai Ảnh và Logo</title>
+  <title>SafeBorderCoin
+  </title>
   <style>
     * {
       margin: 0;
@@ -12,7 +13,7 @@
     }
     body {
       font-family: Arial, sans-serif;
-      background-color: #000; /* Nền đen toàn trang */
+      background-color: #001f3f; /* Nền màu xanh dương */
       color: #fff;
     }
     .container {
@@ -20,22 +21,21 @@
       height: 100vh; /* Chiều cao bằng chiều cao cửa sổ trình duyệt */
       position: relative;
     }
-    /* Phần bên trái: 30% */
+    /* Phần bên trái: 40% */
     .left {
-      width: 30%;
+      width: 40%;
       display: flex;
       align-items: center;
       justify-content: center;
       position: relative;
     }
-    /* Phần bên phải: 70%, được dịch sang bên trái để đè lên nền đen của bên trái */
+    /* Phần bên phải: 60% */
     .right {
-      width: 70%;
+      width: 60%;
       display: flex;
       align-items: center;
       justify-content: center;
       position: relative;
-      margin-left: -50px; /* Điều chỉnh nếu cần đè nhiều hay ít hơn */
     }
     .left img,
     .right img {
@@ -43,22 +43,22 @@
       max-height: 100%;
       object-fit: cover;
     }
-    /* Phóng to ảnh bên phải */
+    /* Không phóng to ảnh bên phải để tránh đè lên ảnh bên trái */
     .right img {
-      transform: scale(1.2);
+      transform: none;
     }
-    /* Header chứa 4 logo nhỏ ở góc trái bên trên */
+    /* Header chứa logo */
     .header {
       position: absolute;
       top: 10px;
       left: 10px;
       z-index: 10;
       display: flex;
-      gap: 10px; /* Khoảng cách giữa các logo */
+      gap: 10px;
       align-items: center;
     }
     .header a img {
-      width: 40px;  /* Kích thước logo nhỏ */
+      width: 40px;
       height: 40px;
       cursor: pointer;
       transition: transform 0.3s ease;
@@ -66,35 +66,40 @@
     .header a img:hover {
       transform: scale(1.2);
     }
+    
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        height: auto;
+      }
+      .left, .right {
+        width: 100%;
+      }
+    }
   </style>
 </head>
 <body>
-  <!-- Header chứa 4 logo:
-       1. Logo X (trái)
-       2. Logo Telegram (thay thế logo1)
-       3. Logo X (thay thế logo2)
-       4. Logo Telegram (phải) -->
   <div class="header">
     <!-- Logo X bên trái -->
-    <a href="https://x.com/Schumer_Elon" target="_blank">
+    <a href="
+    https://x.com/SafeBorderCoin" target="_blank">
       <img src="img/twitter1.png" alt="Logo X">
     </a>
-    <!-- Logo Telegram (thay cho logo1) -->
-    <a href="https://t.me/SchumerShutdownCoin
-    " target="_blank">
+    <!-- Logo Telegram -->
+    <a href="https://t.me/SafeBorderCoin" target="_blank">
       <img src="img/tele1.png" alt="Logo Telegram">
     </a>
- 
   </div>
   
   <div class="container">
-    <!-- Phần bên trái: 30% -->
+    <!-- Phần bên trái: 40% -->
     <div class="left">
-      <img src="img/anhchinh30.jpg" alt="Ảnh của tôi">
+      <img src="img/trump (1).jpg" alt="Ảnh bên trái">
     </div>
-    <!-- Phần bên phải: 70% -->
+    <!-- Phần bên phải: 60% -->
     <div class="right">
-      <img src="img/anhchinh70.jpg" alt="Ảnh chính">
+      <img src="img/trump2.jpg" alt="Ảnh bên phải">
     </div>
   </div>
 </body>
