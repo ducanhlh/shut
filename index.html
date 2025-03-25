@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SafeBorderCoin
-  </title>
+  <title>SALUKI - The Noble Hound</title>
   <style>
     * {
       margin: 0;
@@ -13,94 +12,103 @@
     }
     body {
       font-family: Arial, sans-serif;
-      background-color: #001f3f; /* Nền màu xanh dương */
-      color: #fff;
-    }
-    .container {
+      background-color: #fff; /* Nền trắng */
+      color: #000; /* Chữ đen */
       display: flex;
-      height: 100vh; /* Chiều cao bằng chiều cao cửa sổ trình duyệt */
-      position: relative;
-    }
-    /* Phần bên trái: 40% */
-    .left {
-      width: 40%;
-      display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
+      text-align: center;
+      padding: 20px;
       position: relative;
     }
-    /* Phần bên phải: 60% */
-    .right {
-      width: 60%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-    }
-    .left img,
-    .right img {
-      max-width: 100%;
-      max-height: 100%;
-      object-fit: cover;
-    }
-    /* Không phóng to ảnh bên phải để tránh đè lên ảnh bên trái */
-    .right img {
-      transform: none;
-    }
-    /* Header chứa logo */
     .header {
       position: absolute;
       top: 10px;
       left: 10px;
-      z-index: 10;
       display: flex;
-      gap: 10px;
-      align-items: center;
+      gap: 10px; /* Khoảng cách giữa các logo */
     }
     .header a img {
-      width: 40px;
+      width: 40px;  /* Kích thước logo */
       height: 40px;
       cursor: pointer;
-      transition: transform 0.3s ease;
+      transition: all 0.3s ease-in-out; /* Hiệu ứng mượt */
     }
     .header a img:hover {
-      transform: scale(1.2);
+      transform: scale(1.2); /* Phóng to */
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Hiệu ứng bóng */
+      opacity: 0.8; /* Làm logo hơi mờ nhẹ */
     }
-    
-    /* Responsive Styles */
-    @media (max-width: 768px) {
-      .container {
-        flex-direction: column;
-        height: auto;
-      }
-      .left, .right {
-        width: 100%;
-      }
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px; /* Khoảng cách giữa tiêu đề và ảnh */
+      margin-top: 50px; /* Để tránh bị đè lên bởi logo */
+    }
+    .image-container img {
+      max-width: 90vw; /* Giới hạn chiều rộng tối đa */
+      max-height: 60vh; /* Giới hạn chiều cao tối đa */
+      object-fit: contain;
+      margin-bottom: 20px; /* Khoảng cách giữa ảnh và nội dung */
+    }
+    .description {
+      max-width: 800px; /* Giới hạn chiều rộng để dễ đọc */
+      font-size: 16px;
+      line-height: 1.6;
+      text-align: justify;
     }
   </style>
 </head>
 <body>
+
+  <!-- Header chứa 2 logo ở góc trái trên cùng -->
   <div class="header">
-    <!-- Logo X bên trái -->
-    <a href="
-    https://x.com/SafeBorderCoin" target="_blank">
+    <a href="https://x.com/SALUKI_MEME" target="_blank">
       <img src="img/twitter1.png" alt="Logo X">
     </a>
-    <!-- Logo Telegram -->
-    <a href="https://t.me/SafeBorderCoin" target="_blank">
+    <a href="https://t.me/saluki_meme
+    " target="_blank">
       <img src="img/tele1.png" alt="Logo Telegram">
     </a>
   </div>
+
+  <div class="title">SALUKI: The Noble Hound Racing to the Moon in the Crypto Sands</div>
   
-  <div class="container">
-    <!-- Phần bên trái: 40% -->
-    <div class="left">
-      <img src="img/trump (1).jpg" alt="Ảnh bên trái">
-    </div>
-    <!-- Phần bên phải: 60% -->
-    <div class="right">
-      <img src="img/trump2.jpg" alt="Ảnh bên phải">
-    </div>
+  <div class="image-container">
+    <img src="img/saluki.jpg" alt="Ảnh Chính">
   </div>
+
+</div>
+
+<div class="description">
+  <h2>The Legend of SALUKI: A Memecoin Born in the Sands of Crypto</h2>
+  <p>In the vast, shimmering deserts of the blockchain realm, where innovation and dreams collide, a legend was born under the crescent moon—a legend named SALUKI.</p>
+  <p>The Saluki, a majestic hound revered for centuries in the Middle East, was known as the "Noble Hunter," a symbol of grace, speed, and loyalty. But this wasn’t just any Saluki. This was a digital Saluki, destined to lead a pack of dreamers, hodlers, and moon-seekers in the wild world of cryptocurrency.</p>
+  <p>It all began in the ancient sands of the Ethereum desert, where gas fees soared like the scorching sun, and miners toiled endlessly. A group of crypto nomads, tired of the high fees and slow transactions, gathered around a virtual oasis—a decentralized dream of freedom and wealth. They whispered tales of a mythical creature, a Saluki that could outrun the fastest blockchain, leap over gas fees, and guide its pack to the moon.</p>
+  
+  <h3>A Visionary Coder and the Birth of SALUKI</h3>
+  <p>The nomads, led by a visionary coder named Aisha, decided to bring SALUKI to life. Aisha, a descendant of Bedouin traders, had grown up hearing stories of Saluki hounds racing across the dunes, hunting with precision and grace. She saw in the Saluki a symbol of resilience and unity—perfect for a memecoin that could unite the crypto community.</p>
+  <p>With her team of developers, Aisha crafted SALUKI on the Solana blockchain, known for its speed and low fees, a perfect match for the Saluki’s swift nature. They designed the token with a total supply of 1 trillion SALUKI coins, ensuring a fair distribution to the pack: 50% for the community, 30% for liquidity, 10% for marketing, and 10% for the team, locked for a year to show their commitment.</p>
+
+  <h3>The Community and the Movement</h3>
+  <p>But SALUKI wasn’t just about speed and elegance—it was about community. Aisha and her team launched the SALUKI Pack, a global community of hodlers who believed in the power of unity. They created a Telegram group called "The Saluki Sands," where members shared memes of Saluki dogs wearing crypto sunglasses, racing toward the moon with rocket tails.</p>
+  <p>The community grew rapidly, fueled by SALUKI’s promise: for every transaction, 2% would be redistributed to hodlers, and 1% would go to a charity wallet to support animal shelters, honoring the Saluki’s legacy of loyalty and care.</p>
+
+  <h3>The Legendary PumpFun Listing</h3>
+  <p>As word of SALUKI spread across the crypto dunes, the nomads prepared for their biggest moment yet: the listing on PumpFun, a platform known for launching meme coins to the stars.</p>
+  <p>The SALUKI Pack howled with excitement, creating memes of their noble hound leaping over Ethereum gas pumps, with captions like "SALUKI: Faster than Fees, Bound for the Moon!"</p>
+  <p>Aisha announced the listing with a heartfelt message: <em>"SALUKI isn’t just a memecoin—it’s a movement. We’re here to run fast, dream big, and support each other. Join the pack, hodl tight, and let’s chase the moon together!"</em></p>
+
+  <h3>The Future of SALUKI</h3>
+  <p>On the day of the PumpFun listing, the SALUKI Pack gathered in the virtual desert, their wallets ready, their spirits high. As the token went live, the price surged like a Saluki sprinting across the sands, climbing 300% in the first hour.</p>
+  <p>The community celebrated with digital feasts, sharing images of Saluki dogs adorned with gold crowns, symbolizing their victory. But Aisha reminded them: <em>"This is just the beginning. SALUKI is built for the long run. We’ll keep racing, keep building, and keep giving back."</em></p>
+
+  <h2>Join the SALUKI Pack Today!</h2>
+  <p>HODL, howl, and let’s run to the moon! 🚀 <span style="color: blue;">#SALUKI #PumpFun</span></p>
+  
+</div>
+
+
 </body>
 </html>
